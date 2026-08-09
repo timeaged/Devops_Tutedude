@@ -4,3 +4,9 @@ mkdir test_dir
 cd test_dir
 touch example.txt
 mv example.txt renamed_example.txt
+
+2.
+cat /etc/passed
+head -n 5 /etc/passwd
+tail -n 5 /etc/passwd
+
