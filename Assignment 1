@@ -1,0 +1,6 @@
+1. 
+cd~
+mkdir test_dir
+cd test_dir
+touch example.txt
+mv example.txt renamed_example.txt
