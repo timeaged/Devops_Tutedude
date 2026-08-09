@@ -1,21 +1,33 @@
 1. 
-cd~
-mkdir test_dir
-cd test_dir
-touch example.txt
-mv example.txt renamed_example.txt
+cd~                                              #enter home directory 1st
+mkdir test_dir                                   #make dir
+cd test_dir                                      #enter that dir
+touch example.txt                                #create a blank file
+mv example.txt renamed_example.txt               #rename 
 
 2.
-cat /etc/passed
-head -n 5 /etc/passwd
-tail -n 5 /etc/passwd
+cat /etc/passed                                  #look into user accounts file
+head -n 5 /etc/passwd                            #look 5 lines from top
+tail -n 5 /etc/passwd                            #look 5 lines from bottom
 
 3.
-cat /etc/passwd | grep root
-or 
-grep root /etc/passwd
+cat /etc/passwd | grep root                      #long method by forwarding the output of cat to grep as input and then searching for keyword "root"
+#or 
+grep root /etc/passwd                            #grep feature that helps you find keywords directly
 
 4.
-zip -r test_dir.zip test_dir/
-unzip test_dir.zip -d unzipped_dir/
+zip -r test_dir.zip test_dir/                    #creates zip file from source contents
+unzip test_dir.zip -d unzipped_dir/              #extract contents from zip file to destination folder
+
+5. wget https://example.com/sample.txt           #Downloaded contents of url
+
+6. 
+touch secure.txt                                 #create a blank file
+chmod 444 secure.txt                             #gave only read permissions to user, user group, and others. Numbers mean 4- read, 2-write, 1-execute. Adding them accordingly based on rwx for each user-group-other.
+
+7.
+export MY_VAR="Hello, Linux!"                    #creating an env variable and passing a string to it.
+echo $MY_VAR                                     #printing that variable by calling it using $
+#or
+printenv MY_VAR                                  #searching is if it is saved.
 
