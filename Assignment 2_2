@@ -1,0 +1,26 @@
+students = {}
+
+while True:
+    print("\n1. Add/Update student")
+    print("2. Print all grades")
+    print("3. Exit")
+
+    choice = input("Enter your choice: ")
+
+    if choice == "1":
+        name = input("Enter student name: ")
+        grade = input("Enter grade: ")
+
+        students[name] = grade
+        print("Student added/updated.")
+
+    elif choice == "2":
+        for name in students:
+            print(name, ":", students[name])
+
+    elif choice == "3":
+        print("Goodbye!")
+        break
+
+    else:
+        print("Invalid choice")
