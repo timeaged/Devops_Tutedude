@@ -1,0 +1,7 @@
+file = open("students.txt", "w")
+
+file.write("Rahul - A\n")
+file.write("Aman - B\n")
+file.write("Sara - A+\n")
+
+file.close()
